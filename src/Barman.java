@@ -24,13 +24,13 @@ public class Barman {
 
         Ingredient[] ingredients = new Ingredient[ingredientsNumber];
         for(int i=0; i<ingredientsNumber; i++){
-            ingredients[i] = createIngreient();
+            ingredients[i] = createIngredient();
         }
 
         return new Drink(ingredients);
     }
 
-    private static Ingredient createIngreient(){
+    private static Ingredient createIngredient(){
         System.out.println("Podaj nazwę składnika");
         String ingredientName = scan.nextLine();
         System.out.println("podaj ilość skladnika");
